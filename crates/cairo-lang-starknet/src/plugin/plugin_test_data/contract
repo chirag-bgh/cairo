@@ -418,3 +418,102 @@ impls:
 impl StorageDrop<> of Drop::<Storage<>>;
 
 //! > expected_diagnostics
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> lib.cairo:26:34
+        Option::Some(*serialized.pop_front()? != 0)
+                                 ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> lib.cairo:26:22
+        Option::Some(*serialized.pop_front()? != 0)
+                     ^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> lib.cairo:103:34
+        Option::Some(*serialized.pop_front()?)
+                                 ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> lib.cairo:103:22
+        Option::Some(*serialized.pop_front()?)
+                     ^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> option.cairo:20:35
+        let variant = *serialized.pop_front()?;
+                                  ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> option.cairo:20:23
+        let variant = *serialized.pop_front()?;
+                      ^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> integer.cairo:21:36
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                   ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> integer.cairo:21:24
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                       ^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> integer.cairo:288:36
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                   ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> integer.cairo:288:24
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                       ^
+
+error: Trait `core::traits::TryInto::<<missing>, core::integer::u8>` has multiple implementations, in: "core::integer::U32TryIntoU8", "core::integer::Felt252TryIntoU8", "core::integer::U16TryIntoU8", "core::integer::U128TryIntoU8", "core::integer::U64TryIntoU8"
+ --> integer.cairo:288:50
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                                 ^******^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> integer.cairo:463:36
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                   ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> integer.cairo:463:24
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                       ^
+
+error: Trait `core::traits::TryInto::<<missing>, core::integer::u16>` has multiple implementations, in: "core::integer::U128TryIntoU16", "core::integer::U64TryIntoU16", "core::integer::U32TryIntoU16", "core::integer::Felt252TryIntoU16"
+ --> integer.cairo:463:50
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                                 ^******^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> integer.cairo:639:36
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                   ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> integer.cairo:639:24
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                       ^
+
+error: Trait `core::traits::TryInto::<<missing>, core::integer::u32>` has multiple implementations, in: "core::integer::U64TryIntoU32", "core::integer::Felt252TryIntoU32", "core::integer::U128TryIntoU32"
+ --> integer.cairo:639:50
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                                 ^******^
+
+error: Method `pop_front` not found on type "core::array::Span::<core::felt252>". Did you import the correct trait and impl?
+ --> integer.cairo:815:36
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                   ^*******^
+
+error: Desnap operator can only be applied on snapshots
+ --> integer.cairo:815:24
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                       ^
+
+error: Trait `core::traits::TryInto::<<missing>, core::integer::u64>` has multiple implementations, in: "core::integer::Felt252TryIntoU64", "core::integer::U128TryIntoU64"
+ --> integer.cairo:815:50
+        Option::Some(((*serialized.pop_front()?).try_into())?)
+                                                 ^******^
